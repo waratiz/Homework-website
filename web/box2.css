@@ -1,0 +1,67 @@
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+.box2{
+    background-image: linear-gradient(to bottom, #000000, #363636);
+    margin-left: 140px;
+    height: 500px;
+    width: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: rgba(255, 252, 252, 0.25) 0px 6px 24px 0px;
+    position: relative;
+}
+.box2::after, .box2::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle, 0deg), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    padding: 3px;
+    border-radius: 20px;
+    animation: spin 3s linear infinite;
+}
+.box2::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+@keyframes spin{
+    from{
+      --angle: 0deg;
+    }
+    to{
+      --angle: 360deg;
+    }
+  }
+.box2 p{
+    margin-top: 10px;
+    color: #b3b4bd;
+    text-align: center;
+}
+.white-bar-2{
+    background-color: white;
+    height: 1px; 
+    width: 20%; 
+    margin-top: 5px;
+    margin-left: 150px;
+}
+.doing {
+    color: #006aff;
+    background-color: lightblue; 
+    border-radius: 15px;
+    padding: 1.5rem;
+    max-width: 17rem;
+    margin: 30px;
+    text-align: center;
+    box-shadow: rgb(45, 58, 238) 0px 6px 24px 0px;
+}
+.doing p{
+    color: #2d7ceb;
+}

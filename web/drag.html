@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="back.css">
+    <link rel="stylesheet" href="box1.css">
+    <link rel="stylesheet" href="box2.css">
+    <link rel="stylesheet" href="box3.css">
+    <title>Homework</title>
+</head>
+
+<body>
+    <header>Homework</header>
+    <div class="container">
+        
+        <div class="box1">
+            <p>My Homework</p>
+            <div class="white-bar-1"></div>
+            <article class="item1" onclick="moveToDoing(this)">
+                <h2>Biology</h2>
+                <p>งานใหม่!</p>
+            </article>
+            <article class="item1" onclick="moveToDoing(this)">
+                <h2>Math</h2>
+                <p>งานใหม่!</p>
+            </article>
+            <article class="item1" onclick="moveToDoing(this)">
+                <h2>Chemical</h2>
+                <p>งานใหม่!</p>
+            </article>
+        </div>
+
+       
+        <div class="box2">
+            <p>Doing</p>
+            <div class="white-bar-2"></div>
+            <div id="doingTask"></div>
+        </div>
+
+       
+        <div class="box3">
+            <p>Done</p>
+            <div class="white-bar-3"></div>
+            <div id="doneTasks"></div>
+        </div>
+    </div>
+
+    <script src="drag.js"></script>
+</body>
+
+</html>

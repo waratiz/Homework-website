@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('https://jwtalk.net/uploads/monthly_2021_11/large.Lakeside_2019_Evening_UHD2.png.10539f9a4d0ad5769d0b9c39a5268f3c.png');
+
+    
+    background-size: cover;
+
+    
+    background-repeat: no-repeat;
+
+    
+    background-position: center;
+
+    
+    background-attachment: fixed;
+}
+header{
+    font-family: Poppins;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    text-align: center;
+    font-size: 50px;
+    color: bisque;
+}
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    margin: 40px 20px;
+}
